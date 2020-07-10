@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    show_sql: true
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+  h2:
+    console:
+      enabled: true
+  profiles:
+    include: oauth
+  sessio:
+    store-type: jdbc
+
+server:
+  port: 8080
+logging:
+  level:
+    web: debug
